@@ -1,0 +1,65 @@
+{
+  "title": "Scroll with left and right mouse buttons",
+  "rules": [
+    {
+      "description": "Scroll with left and right mouse buttons",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "pointing_button": "button1"
+              },
+              {
+                "pointing_button": "button2"
+              }
+            ],
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "set_variable": {
+                "name": "enable_mouse_motion_to_scroll",
+                "value": 1
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_variable": {
+                "name": "enable_mouse_motion_to_scroll",
+                "value": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "mouse_motion_to_scroll",
+          "from": {
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "enable_mouse_motion_to_scroll",
+              "value": 1
+            }
+          ],
+          "options": {
+            "momentum_scroll_enabled": false,
+            "speed_multiplier": 2.5
+          }
+        }
+      ]
+    }
+  ]
+}

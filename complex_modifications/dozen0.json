@@ -1,0 +1,286 @@
+{
+  "title": "Dozen0 shortcuts",
+  "rules": [
+    {
+      "description": "Dozen0: application launchers",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f1"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f1"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f2"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f2"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f3"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f3"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f4"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f4"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f5"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f5"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f6"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f6"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f11"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f11"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f12"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f12"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f13"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f13"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f14"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f14"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f15"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f15"
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1240,
+                  "product_id": 59983,
+                  "description": "Dozen0"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f16"
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key f16"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

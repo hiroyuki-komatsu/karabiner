@@ -1,0 +1,33 @@
+{
+  "title": "Mouse configurations",
+  "rules": [
+    {
+      "description": "Mission control with left and right buttons",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "pointing_button": "button1"
+              },
+              {
+                "pointing_button": "button2"
+              }
+            ],
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "mission_control"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

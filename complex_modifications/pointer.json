@@ -1,0 +1,66 @@
+{
+  "title": "Mouse position configurations",
+  "rules": [
+    {
+      "description": "Eisu + d to screen#1",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "simultaneous": [
+              {
+                "key_code": "japanese_eisuu"
+              },
+              {
+                "key_code": "d"
+              }
+            ],
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                    "x": "50%",
+                    "y": "50%",
+                    "screen": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "description": "Right Shift to screen#0",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "right_shift",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                    "x": "50%",
+                    "y": "50%",
+                    "screen": 0
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

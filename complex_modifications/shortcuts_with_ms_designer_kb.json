@@ -1,0 +1,62 @@
+{
+  "title": "Shortcuts with MS designer's keyboard",
+  "rules": [
+    {
+      "description": "Desktops",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1118,
+                  "product_id": 2099,
+                  "description": "MS designers kbd"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "period"
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        },
+        {
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 1118,
+                  "product_id": 2099,
+                  "description": "MS designers kbd"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "comma"
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

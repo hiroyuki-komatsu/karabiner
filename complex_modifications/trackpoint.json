@@ -1,0 +1,139 @@
+{
+  "title": "Shortcuts for TrackPoint Keyboard II",
+  "rules": [
+    {
+      "description": "Track Point Keyboard II configurations",
+      "manipulators": [
+        {
+          "description": "F7 to set audio output to BenQ speaker",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "description": "TrackPoint Keyboard II",
+                  "vendor_id": 6127,
+                  "product_id": 24814
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f7",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"BenQ EW3280U\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_trackpoint_f7",
+                "text": "Audio output: BenQ EW3280U"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+                "set_notification_message": {
+                    "id": "org.pqrs.karabina_trackpoint_f7",
+                    "text": ""
+                }
+            }
+          ]
+        },
+        {
+          "description": "F8 to set audio output to Astro A50 Game",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "description": "TrackPoint Keyboard II",
+                  "vendor_id": 6127,
+                  "product_id": 24814
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f8",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Game\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_trackpoint_f8",
+                "text": "Audio output: Astro A50 Game"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+                "set_notification_message": {
+                    "id": "org.pqrs.karabina_trackpoint_f8",
+                    "text": ""
+                }
+            }
+          ]
+        },
+        {
+          "description": "F8 to set audio output to Astro A50 Game",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "description": "TrackPoint Keyboard II",
+                  "vendor_id": 6127,
+                  "product_id": 24814
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f8",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Game\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_trackpoint_f8",
+                "text": "Audio output: Astro A50 Game"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+                "set_notification_message": {
+                    "id": "org.pqrs.karabina_trackpoint_f8",
+                    "text": ""
+                }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

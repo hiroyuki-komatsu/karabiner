@@ -1,0 +1,405 @@
+{
+  "title": "XPPen ACK05",
+  "rules": [
+    {
+      "description": "XPPen ACK05 configurations",
+      "manipulators": [
+        {
+          "description": "Wheel Left",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_hyphen",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "Wheel Left",
+              "key_code": "volume_decrement"
+            }
+          ]
+        },
+        {
+          "description": "Wheel Right",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "keypad_plus",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "Wheel Right",
+              "key_code": "volume_increment"
+            }
+          ]
+        },
+        {
+          "description": "K4",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "s",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "K4",
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"U3223QZ\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k4",
+                "text": "Audio output: U3223QZ"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k4",
+                "text": ""
+              }
+            }
+          ]
+        },
+        {
+          "description": "K3",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "f5"
+          },
+          "to": [
+            {
+              "description": "K3",
+              "shell_command": "open ~/Applications/Chrome\\ Apps.localized/2023\\ Notes.app"
+            }
+          ]
+        },
+        {
+          "description": "K2",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "K2",
+              "shell_command": "open ~/Applications/Chrome\\ Apps.localized/SecureShell.app"
+            }
+          ]
+        },
+        {
+          "description": "K1",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "o",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "K1",
+              "shell_command": "open /System/Applications/Dictionary.app"
+            }
+          ]
+        },
+        {
+          "description": "K10",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "optional": ["any"],
+              "mandatory": [
+                "left_control",
+                "left_shift"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "K10",
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Game\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k10",
+                "text": "Audio output: Astro A50 Game"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k10",
+                "text": ""
+              }
+            }
+          ]
+        },
+        {
+          "description": "K9",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "spacebar"
+          },
+          "to": [
+            {
+              "description": "K9",
+              "software_function": {
+                "set_mouse_cursor_position": {
+                    "x": "50%",
+                    "y": "95%",
+                    "screen": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "description": "K8",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "z",
+            "modifiers": {
+              "optional": ["any"],
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "description": "K8",
+              "key_code": "eject",
+              "modifiers": ["left_option", "left_command"]
+            }
+          ]
+        },
+        {
+          "description": "K7",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "left_option"
+          },
+          "to": [
+            {
+              "description": "K7",
+              "key_code": "mute"
+            }
+          ]
+        },
+        {
+          "description": "K6",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "left_control",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_control",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "description": "K6",
+              "key_code" : "i",
+              "modifiers": [
+                "command",
+                "option"
+              ]
+            }
+          ]
+        },
+        {
+          "description": "K5",
+          "conditions": [
+            {
+              "type": "device_if",
+              "identifiers": [
+                {
+                  "vendor_id": 10429,
+                  "product_id": 514,
+                  "description": "XPPen ACK05"
+                }
+              ]
+            }
+          ],
+          "type": "basic",
+          "from": {
+            "key_code": "left_shift",
+            "modifiers": {
+              "optional": ["any"]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_shift",
+              "lazy": true
+            }
+          ],
+          "to_if_alone": [
+            {
+              "description": "K5",
+              "shell_command": "open /System/Library/PreferencePanes/Displays.prefPane/"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

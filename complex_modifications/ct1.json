@@ -1,0 +1,94 @@
+{
+  "title": "CT-1 configurations",
+  "rules": [
+    {
+      "description": "Touch panel",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [
+            {
+                "type": "device_if",
+                "identifiers": [
+                    {
+                      "description": "CT-1",
+                      "vendor_id": 13015,
+                      "product_id": 1
+                    }
+                ]
+            },
+            {
+              "type": "variable_if",
+              "name": "ct1_screen_moved",
+              "value": false
+            }
+          ],
+          "from": {
+            "pointing_button": "button1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "software_function": {
+                "set_mouse_cursor_position": {
+                    "x": "50%",
+                    "y": "50%",
+                    "screen": 0
+                }
+              }
+            },
+            {
+              "set_variable": {
+                "name": "ct1_screen_moved",
+                "value": true
+              }
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "conditions": [
+            {
+                "type": "device_if",
+                "identifiers": [
+                    {
+                      "description": "CT-1",
+                      "vendor_id": 13015,
+                      "product_id": 1
+                    }
+                ]
+            },
+            {
+              "type": "variable_if",
+              "name": "ct1_screen_moved",
+              "value": true
+            }
+          ],
+          "from": {
+            "pointing_button": "button1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "pointing_button": "button1"
+            },
+            {
+              "set_variable": {
+                "name": "ct1_screen_moved",
+                "value": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
