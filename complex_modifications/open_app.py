@@ -3,7 +3,7 @@ import subprocess
 
 APPS = {
   'f1': 'open /System/Applications/Dictionary.app',
-  'f2': 'open ~/Applications/Chrome\ Apps.localized/SecureShell.app',
+  'f2': 'open ~/Applications/Chrome\ Apps.localized/SecureShell.app && /usr/local/bin/python3 ~/.config/karabiner/assets/complex_modifications/mouse.py --position 131,44',
   'f3': 'open ~/Applications/Chrome\ Apps.localized/Cider-v.app',
   'f4': 'open ~/Applications/Chrome\ Apps.localized/2023\ Notes.app',
   'f6': 'open  /Applications/Karabiner-Elements.app',

@@ -129,7 +129,21 @@
           "to": [
             {
               "description": "K3",
-              "shell_command": "open ~/Applications/Chrome\\ Apps.localized/2023\\ Notes.app"
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"BenQ EW3280U\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k3",
+                "text": "Audio output: BenQ EW3280U"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k3",
+                "text": ""
+              }
             }
           ]
         },
@@ -159,7 +173,21 @@
           "to": [
             {
               "description": "K2",
-              "shell_command": "open ~/Applications/Chrome\\ Apps.localized/SecureShell.app"
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"U3223QZ\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k2",
+                "text": "Audio output: U3223QZ"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k2",
+                "text": ""
+              }
             }
           ]
         },
@@ -189,7 +217,21 @@
           "to": [
             {
               "description": "K1",
-              "shell_command": "open /System/Applications/Dictionary.app"
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Game\""
+            },
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k1",
+                "text": "Audio output: Astro A50 Game"
+              }
+            }
+          ],
+          "to_after_key_up": [
+            {
+              "set_notification_message": {
+                "id": "org.pqrs.karabina_xppen_ack05_k1",
+                "text": ""
+              }
             }
           ]
         },
@@ -240,7 +282,7 @@
           ]
         },
         {
-          "description": "K9",
+          
           "conditions": [
             {
               "type": "device_if",
@@ -262,8 +304,8 @@
               "description": "K9",
               "software_function": {
                 "set_mouse_cursor_position": {
-                    "x": "50%",
-                    "y": "95%",
+                    "x": "5%",
+                    "y": "3%",
                     "screen": 0
                 }
               }
