@@ -17,16 +17,9 @@
           "to": [
             {
               "set_variable": {
-                "name": "enable_mouse_motion_to_scroll",
-                "value": 1
-              }
-            }
-          ],
-          "to_after_key_up": [
-            {
-              "set_variable": {
-                "name": "enable_mouse_motion_to_scroll",
-                "value": 0
+                "name": "button3_layer",
+                "value": true,
+                "key_up_value": false
               }
             }
           ],
@@ -48,8 +41,8 @@
           "conditions": [
             {
               "type": "variable_if",
-              "name": "enable_mouse_motion_to_scroll",
-              "value": 1
+              "name": "button3_layer",
+              "value": true
             }
           ],
           "options": {
