@@ -217,12 +217,12 @@
           "to": [
             {
               "description": "K1",
-              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Game\""
+              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Voice\""
             },
             {
               "set_notification_message": {
                 "id": "org.pqrs.karabina_xppen_ack05_k1",
-                "text": "Audio output: Astro A50 Game"
+                "text": "Audio output: Astro A50 Voice"
               }
             }
           ],
@@ -365,7 +365,7 @@
           "to": [
             {
               "description": "K7",
-              "key_code": "mute"
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/open_app.py --key mute"
             }
           ]
         },
