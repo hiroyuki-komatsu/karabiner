@@ -90,7 +90,7 @@
           "to": [
             {
               "description": "K4",
-              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"U3223QZ\""
+              "shell_command": "/opt/homebrew/bin/SwitchAudioSource -s \"U3223QZ\""
             },
             {
               "set_notification_message": {
@@ -129,7 +129,7 @@
           "to": [
             {
               "description": "K3",
-              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"BenQ EW3280U\""
+              "shell_command": "/opt/homebrew/bin/SwitchAudioSource -s \"BenQ EW3280U\""
             },
             {
               "set_notification_message": {
@@ -173,7 +173,7 @@
           "to": [
             {
               "description": "K2",
-              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"U3223QZ\""
+              "shell_command": "/opt/homebrew/bin/SwitchAudioSource -s \"U3223QZ\""
             },
             {
               "set_notification_message": {
@@ -217,7 +217,7 @@
           "to": [
             {
               "description": "K1",
-              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Voice\""
+              "shell_command": "/opt/homebrew/bin/SwitchAudioSource -s \"Astro A50 Voice\""
             },
             {
               "set_notification_message": {
@@ -263,7 +263,7 @@
           "to": [
             {
               "description": "K10",
-              "shell_command": "/usr/local/bin/SwitchAudioSource -s \"Astro A50 Game\""
+              "shell_command": "/opt/homebrew/bin/SwitchAudioSource -s \"Astro A50 Game\""
             },
             {
               "set_notification_message": {

@@ -14,7 +14,7 @@ APPS = {
   'f12': 'open /System/Applications/Utilities/Terminal.app',
   'f13': 'open /Applications/Visual\ Studio\ Code.app',
   'f16': 'open /Applications/Karabiner-EventViewer.app',
-  'mute': f'/usr/local/bin/SwitchAudioSource -s \"U3223QZ\" && {HID} --key media_volume_mute',
+  'mute': f'/opt/homebrew/bin/SwitchAudioSource -s \"U3223QZ\" && {HID} --key media_volume_mute',
 }
 
 
