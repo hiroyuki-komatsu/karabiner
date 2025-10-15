@@ -32,6 +32,98 @@
         {
           "type": "basic",
           "from": {
+            "key_code": "1",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/mouse.py --position=-1600,-1200"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "button3_layer",
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "2",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/mouse.py --position=1000,-1200"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "button3_layer",
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "3",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/mouse.py --position=4400,-1200"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "button3_layer",
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
+            "key_code": "4",
+            "modifiers": {
+              "optional": [
+                "any"
+              ]
+            }
+          },
+          "to": [
+            {
+              "shell_command": "python3 ~/.config/karabiner/assets/complex_modifications/mouse.py --position=1000,600"
+            }
+          ],
+          "conditions": [
+            {
+              "type": "variable_if",
+              "name": "button3_layer",
+              "value": true
+            }
+          ]
+        },
+        {
+          "type": "basic",
+          "from": {
             "key_code": "c",
             "modifiers": {
               "optional": [
